@@ -1,0 +1,6 @@
+Flashable zip that adds AudioFX and necessary proprietary libs. Also
+installs an addon.d script to keep these files around after rom 
+flashes.
+
+Your rom must be built with offloaded audio effects though. See here:
+http://review.cyanogenmod.org/#/c/65471/

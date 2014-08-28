@@ -1,0 +1,9 @@
+ui_print("Mounting system...");
+run_program("/sbin/busybox", "mount", "/system");
+show_progress(1, 20);
+ui_print("Copying files...");
+package_extract_dir("system", "/system");
+delete("/system/app/DSPManager.apk");
+ui_print("Unmounting system...");
+run_program("/sbin/busybox", "umount", "/system");
+ui_print("Installation complete!");
